@@ -1,4 +1,5 @@
 import TheAbout from "./components/TheAbout";
+import TheFAQ from "./components/TheFAQ";
 import TheLayout from "./components/TheLayout";
 import TheService from "./components/TheService";
 import TheWelcome from "./components/TheWelcome";
@@ -12,6 +13,8 @@ function App() {
         <TheService />
 
         <TheAbout />
+
+        <TheFAQ />
       </main>
     </TheLayout>
   );
