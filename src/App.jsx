@@ -1,3 +1,4 @@
+import TheAbout from "./components/TheAbout";
 import TheLayout from "./components/TheLayout";
 import TheService from "./components/TheService";
 import TheWelcome from "./components/TheWelcome";
@@ -9,6 +10,8 @@ function App() {
         <TheWelcome />
 
         <TheService />
+
+        <TheAbout />
       </main>
     </TheLayout>
   );
