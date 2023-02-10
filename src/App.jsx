@@ -1,10 +1,11 @@
 import TheLayout from "./components/TheLayout";
+import TheWelcome from "./components/TheWelcome";
 
 function App() {
   return (
     <TheLayout>
       <main className="min-h-screen">
-        <h1 className="text-2xl text-white">Main</h1>
+        <TheWelcome />
       </main>
     </TheLayout>
   );

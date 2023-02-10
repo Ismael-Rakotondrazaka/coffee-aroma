@@ -27,9 +27,9 @@ function TheHeader() {
   ]);
 
   return (
-    <header className="py-5 px-3 flex flex-row items-center justify-evenly">
+    <header className="flex flex-row items-center px-3 py-5 justify-evenly max-h-16">
       <div className="max-w-[7rem]">
-        <img src={Logo} alt="logo" className="w-full h-full"/>
+        <img src={Logo} alt="logo" className="w-full h-full" />
       </div>
 
       <nav>
