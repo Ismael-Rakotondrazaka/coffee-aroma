@@ -1,15 +1,12 @@
-import TheFooter from "./components/TheFooter";
-import TheHeader from "./components/TheHeader";
+import TheLayout from "./components/TheLayout";
 
 function App() {
   return (
-    <>
-      <TheHeader />
-
-      <div className="min-h-screen"></div>
-
-      <TheFooter />
-    </>
+    <TheLayout>
+      <main className="min-h-screen">
+        <h1 className="text-2xl text-white">Main</h1>
+      </main>
+    </TheLayout>
   );
 }
 
