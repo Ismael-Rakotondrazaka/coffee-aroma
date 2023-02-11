@@ -14,7 +14,7 @@ function QuestionItem(props) {
   };
 
   const buttonClass = useMemo(() => {
-    let result = "w-7 box-content py-4 px-5";
+    let result = "w-7 box-content py-2 lg:py-4 px-3 lg:px-5 shrink-0";
 
     if (!props.isOpened) {
       result += " bg-brown-light";
@@ -26,10 +26,12 @@ function QuestionItem(props) {
   return (
     <li className="w-full mb-5 border-2 rounded-lg bg-brown-medium last:mb-0 border-brown-light">
       <div className="flex flex-row items-stretch justify-between">
-        <h2 className="p-5 font-bold text-white uppercase">{props.question}</h2>
+        <h2 className="p-3 font-bold text-white uppercase lg:p-5">
+          {props.question}
+        </h2>
 
-        <button onClick={clickHandler}>
-          <img src={icon} alt="" className={buttonClass} />
+        <button onClick={clickHandler} className={buttonClass}>
+          <img src={icon} alt="" />
           <span className="sr-only">Expand</span>
         </button>
       </div>
