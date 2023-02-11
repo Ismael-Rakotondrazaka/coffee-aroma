@@ -22,7 +22,7 @@ function ThePartner() {
 
   return (
     <div className="relative min-h-screen px-3 py-20">
-      <div className="absolute bottom-[4%] right-[4%] w-full max-w-sm">
+      <div className="absolute bottom-[4%] right-[4%] w-full max-w-sm z-[-1]">
         <img src={CoffeeSplash3} alt="" className="w-full h-full" />
       </div>
 
