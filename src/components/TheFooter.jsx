@@ -117,7 +117,7 @@ function TheFooter() {
           </ul>
         </div>
 
-        <div className="max-w-xs py-3">
+        <div className="max-w-xs px-3">
           <h2 className="mb-2 text-lg font-bold text-white uppercase">
             Subscribe newsletter
           </h2>
