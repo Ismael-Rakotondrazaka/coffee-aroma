@@ -58,13 +58,13 @@ function TheFooter() {
 
   return (
     <footer className="">
-      <div className="flex flex-row items-start px-3 justify-evenly py-7 border-y-2 border-brown-light">
-        <div>
+      <div className="flex flex-row flex-wrap items-start px-3 gap-y-10 justify-evenly py-7 border-y-2 border-brown-light">
+        <div className="px-3">
           <div className="max-w-[7rem] mx-auto mb-7">
             <img src={Logo} alt="logo" className="w-full h-full" />
           </div>
 
-          <div className="flex flex-row items-center gap-5">
+          <div className="flex flex-row items-center gap-5 mx-auto w-fit">
             {socialLinks.map((link, i) => (
               <a href={link.href} key={i}>
                 <img
@@ -79,7 +79,7 @@ function TheFooter() {
           </div>
         </div>
 
-        <div>
+        <div className="px-3 min-w-[15rem]">
           <h2 className="mb-2 text-lg font-bold text-white uppercase">
             Quick link
           </h2>
@@ -98,7 +98,7 @@ function TheFooter() {
           </ul>
         </div>
 
-        <div>
+        <div className="px-3 min-w-[15rem]">
           <h2 className="mb-2 text-lg font-bold text-white uppercase">
             Contact
           </h2>
@@ -117,7 +117,7 @@ function TheFooter() {
           </ul>
         </div>
 
-        <div className="max-w-xs">
+        <div className="max-w-xs px-3">
           <h2 className="mb-2 text-lg font-bold text-white uppercase">
             Subscribe newsletter
           </h2>
@@ -134,7 +134,7 @@ function TheFooter() {
               name=""
               placeholder="Enter your email"
               id=""
-              className="p-3 text-white border-2 border-r-0 outline-none bg-brown-medium placeholder:text-white/60 rounded-l-md border-brown-light"
+              className="w-full p-3 text-white border-2 border-r-0 outline-none bg-brown-medium placeholder:text-white/60 rounded-l-md border-brown-light"
             />
 
             <button className="p-3 text-white bg-brown-light rounded-r-md">

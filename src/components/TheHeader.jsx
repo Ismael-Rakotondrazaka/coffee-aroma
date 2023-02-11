@@ -27,16 +27,19 @@ function TheHeader() {
   ]);
 
   return (
-    <header className="flex flex-row items-center px-3 py-5 justify-evenly max-h-16">
-      <div className="max-w-[7rem]">
+    <header className="flex flex-row items-center px-3 py-5 justify-evenly max-h-24 lg:max-h-16">
+      <div className="max-w-[7rem] hidden md:block">
         <img src={Logo} alt="logo" className="w-full h-full" />
       </div>
 
       <nav>
-        <ul className="flex flex-row items-center justify-center gap-5">
+        <ul className="flex flex-row flex-wrap items-center justify-center gap-1 md:gap-3 lg:gap-5">
           {links.map((link, i) => (
             <li key={i}>
-              <a href={link.href} className="btn">
+              <a
+                href={link.href}
+                className="btn max-md:!normal-case max-md:!px-3 max-md:!py-1 whitespace-nowrap"
+              >
                 {link.text}
               </a>
             </li>
@@ -44,7 +47,7 @@ function TheHeader() {
         </ul>
       </nav>
 
-      <div className="flex flex-row items-center justify-center gap-5">
+      <div className="flex-row items-center justify-center hidden gap-5 lg:flex">
         <p className="text-white">012-345-6789</p>
 
         <button className="btn">Get in touch</button>

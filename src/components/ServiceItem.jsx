@@ -2,7 +2,7 @@ import ChevronIcon from "../assets/images/icons/chevron-right.svg";
 
 function ServiceItem(props) {
   return (
-    <li className="w-1/4 max-w-md p-2 mr-3 transition-colors border-2 rounded-lg bg-brown-medium border-brown-light hover:bg-brown-light last:mr-0">
+    <li className="w-full md:w-[clac(50% - 1rem)] lg:w-1/4 max-w-sm p-2 lg:mr-3 transition-colors border-2 rounded-lg bg-brown-medium border-brown-light hover:bg-brown-light last:mr-0">
       <div className="h-[22rem]">
         <img
           src={props.imgSrc}

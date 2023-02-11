@@ -3,8 +3,8 @@ import SectionTitle from "./SectionTitle";
 
 function TheAbout() {
   return (
-    <div className="flex flex-row items-center min-h-screen px-3 py-20 justify-evenly">
-      <div className="max-w-lg">
+    <div className="flex flex-row flex-wrap-reverse items-center min-h-screen px-3 py-20 justify-evenly">
+      <div className="hidden max-w-lg lg:block">
         <img
           src={IllustrationCoffee}
           alt=""
@@ -12,7 +12,7 @@ function TheAbout() {
         />
       </div>
 
-      <div className="border-2 rounded-lg p-7 border-brown-light bg-brown-medium">
+      <div className="p-3 border-2 rounded-lg md:p-5 lg:p-7 border-brown-light bg-brown-medium">
         <SectionTitle className="!text-left">About us</SectionTitle>
 
         <p className="max-w-md mb-5 leading-8 text-white uppercase">

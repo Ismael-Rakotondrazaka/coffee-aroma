@@ -49,15 +49,15 @@ function TheContact() {
 
   return (
     <div className="relative min-h-screen px-3 py-20">
-      <div className="absolute left-[10%] top-0 w-full max-w-sm z-[-1]">
+      <div className="absolute -left-[10%] top-0 w-full max-w-sm z-[-1]">
         <img src={CoffeeSplash2} alt="" className="w-full h-full" />
       </div>
 
       <div className="w-full max-w-4xl p-5 mx-auto border-2 rounded-lg bg-brown-medium border-brown-light">
         <SectionTitle>Contact us</SectionTitle>
 
-        <div className="flex flex-row justify-around">
-          <div className="mr-3">
+        <div className="flex flex-row flex-wrap justify-around md:flex-nowrap gap-y-10">
+          <div className="self-start w-full mr-3 md:w-fit">
             <ul className="text-white">
               {contacts.map((contact, i) => (
                 <li key={i} className="mb-5 last:mb-0">
@@ -69,12 +69,12 @@ function TheContact() {
             </ul>
           </div>
 
-          <div className="w-full max-w-md mr-3">
+          <div className="w-full mr-3 md:max-w-md">
             <TheSignup />
           </div>
 
-          <div>
-            <div className="flex flex-col items-center gap-5 px-5">
+          <div className="shrink-0">
+            <div className="flex flex-row items-center gap-5 px-5 md:flex-col">
               {socialLinks.map((link, i) => (
                 <a href={link.href} key={i}>
                   <img

@@ -40,7 +40,7 @@ function TheFAQ() {
 
   return (
     <div className="relative min-h-screen px-3 py-20">
-      <div className="absolute top-[-10%] right-[10%] rotate-45 z-[-1] w-full max-w-md">
+      <div className="absolute top-[-10%] right-[20%] rotate-45 z-[-1] w-full max-w-[10rem]">
         <img src={CoffeeSplash1} alt="" className="w-full h-full" />
       </div>
 
