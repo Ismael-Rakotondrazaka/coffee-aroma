@@ -1,6 +1,8 @@
-import { useState } from "react";
 import FAQList from "./FAQList";
 import SectionTitle from "./SectionTitle";
+import CoffeeSplash1 from "../assets/images/design/coffee-splash-1.png";
+
+import { useState } from "react";
 
 function TheFAQ() {
   const [faqs] = useState([
@@ -37,7 +39,11 @@ function TheFAQ() {
   ]);
 
   return (
-    <div className="min-h-screen px-3 py-20">
+    <div className="relative min-h-screen px-3 py-20">
+      <div className="absolute top-[-10%] right-[10%] rotate-45 z-[-1] w-full max-w-md">
+        <img src={CoffeeSplash1} alt="" className="w-full h-full" />
+      </div>
+
       <SectionTitle>Common customer questions</SectionTitle>
 
       <FAQList faqs={faqs} />

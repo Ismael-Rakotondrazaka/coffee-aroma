@@ -4,6 +4,7 @@ import LogoFacebook from "../assets/images/logos/logo-facebook.svg";
 import LogoInstagram from "../assets/images/logos/logo-instagram.svg";
 import LogoTwitter from "../assets/images/logos/logo-twitter.svg";
 import LogoYoutube from "../assets/images/logos/logo-youtube.svg";
+import CoffeeSplash2 from "../assets/images/design/coffee-splash-2.png";
 
 import { useState } from "react";
 
@@ -47,7 +48,11 @@ function TheContact() {
   ]);
 
   return (
-    <div className="min-h-screen px-3 py-20">
+    <div className="relative min-h-screen px-3 py-20">
+      <div className="absolute left-[10%] top-0 w-full max-w-sm z-[-1]">
+        <img src={CoffeeSplash2} alt="" className="w-full h-full" />
+      </div>
+
       <div className="w-full max-w-4xl p-5 mx-auto border-2 rounded-lg bg-brown-medium border-brown-light">
         <SectionTitle>Contact us</SectionTitle>
 
