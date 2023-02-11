@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-brown-dark;
+}
+
+@layer components {
+    .btn {
+        @apply inline-block px-4 py-2 text-white uppercase border-2 border-transparent rounded-full bg-brown-medium;
+    }
+
+    .btn:hover {
+        @apply border-brown-light;
+    }
+
+    .btn:active {
+        @apply bg-brown-light;
+    }
+}
