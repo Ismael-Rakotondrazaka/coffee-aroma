@@ -1,6 +1,6 @@
 # coofee-aroma
 
-Live: [https://template-aroma-coffee.onrender.com](https://template-aroma-coffee.onrender.com)
+Live: [https://template-coffee-aroma.onrender.com](https://template-coffee-aroma.onrender.com)
 
 ## Technos
 * [React](https://reactjs.org)
